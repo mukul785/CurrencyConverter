@@ -1,4 +1,6 @@
-const API_URL = "API";
+import CONFIG from './config.js';
+
+const API_URL = `https://v6.exchangerate-api.com/v6/${CONFIG.API_KEY}/latest/`;
 
 const currencyOneEl = document.getElementById("currency-one");
 const currencyTwoEl = document.getElementById("currency-two");
