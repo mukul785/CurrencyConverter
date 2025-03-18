@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="converter-card">
+      <div class="header">
+        <div class="icon-wrapper">
+          <div class="icon-circle">
+            <DollarSign class="icon" />
+          </div>
+        </div>
+        <h1>Exchange Rate Calculator</h1>
+        <p>Choose the currency and amounts to get the exchange</p>
+      </div>
+      <div class="currency-row">
+        <select id="currency-one">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <select id="currency-two">
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+
+      <div class="exchange-info">
+        <p id="rate">1 USD = 0.00 EUR</p>
+      </div>
+
+      <div class="currency-row">
+        <input
+          type="number"
+          id="amount-one"
+          placeholder="0"
+          defaultValue="1"
+        />
+        <input
+          type="number"
+          id="amount-two"
+          placeholder="0"
+        />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
